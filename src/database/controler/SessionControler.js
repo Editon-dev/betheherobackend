@@ -4,7 +4,7 @@ module.exports = {
     async create (request,response){
     const {id} = request.body;
     
-    const ong = await connection('https://bethehero-editon-backend.herokuapp.com/ongs')
+    const ong = await connection('ongs')
         .where('id', id)
         .first();
     
